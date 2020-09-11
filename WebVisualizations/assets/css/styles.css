@@ -1,14 +1,23 @@
 /* Giving the body the specified background color, adding font sizes for the h1 and h3 elements we'll be using */
 body {
   background: #f1f1f1;
+  font-family: 'Bellota';
+  font-size: 20px;
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 30px;
+  font-weight: bold;
+  color: royalblue;
 }
 
 h3 {
   font-size: 30px;
+}
+
+.imageleft {
+  float: left;
+  padding: 10px 10px 0 0;
 }
 
 /* Giving our navbar some padding and a background color */
@@ -36,15 +45,16 @@ h3 {
 
 /* Styling the header, giving it a height, a background color, and some top padding */
 .header {
-  height: 200px;
+  height: 50px;
   padding-top: 20px;
+  padding-left: 20px;
   background: #cdcdcd;
 }
 
 /* Centering our h1 tag inside our header, giving it a little padding, removing its margin */
 .header h1 {
   padding: 60px;
-  margin: 0;
+  margin: 20;
   color: #5191fd;
   text-align: center;
 }
