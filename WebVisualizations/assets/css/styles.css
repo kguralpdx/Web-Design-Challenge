@@ -1,6 +1,6 @@
 /* Giving the body the specified background color, adding font sizes for the h1 and h3 elements we'll be using */
 body {
-  background: #f1f1f1;
+/*  background: #f1f1f1; */
   font-family: 'Bellota';
   font-size: 20px;
 }
@@ -60,7 +60,7 @@ table {
   height: 50px;
   padding-top: 20px;
   padding-left: 20px;
-  background: #cdcdcd;
+/* background: #cdcdcd; */
 }
 
 /* Centering our h1 tag inside our header, giving it a little padding, removing its margin */
