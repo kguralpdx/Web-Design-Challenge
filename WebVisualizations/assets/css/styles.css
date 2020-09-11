@@ -65,3 +65,9 @@ h3 {
   margin-right: 100px;
   margin-left: 100px;
 }
+
+/* Giving the .figcaption element font size and color*/
+.figcaption {
+  font-size: 12px;
+  color: dimgrey;
+}
