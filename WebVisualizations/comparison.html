@@ -16,17 +16,57 @@
 
 </head>
 
-<body>
+<style>
+  p    {color: slategrey ;font-size: medium;font-family: Arial, Helvetica, sans-serif;margin-top: 20px;margin-left: 20px;}  
+  </style>
 
-    <div class="container-fluid">
-      <h1>Responsive Columns</h1>
-      <p>Resize the browser window to see the effect.</p>
-      <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
-      <div class="row">
-        <div class="col-md-6" style="background-color:lavender;">.col-md-3</div>
-        <div class="col-md-6" style="background-color:lavenderblush;">.col-sm-3</div>
+<body>
+  <div class="container-fluid" style="margin-top:30px;">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="page-header">
+          <h1 class="header">
+            Comparison: Latitude vs. X
+          </h1>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <p>
+              Click any plot to get an in-depth analysis.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h2>
+              vs. Max Temperature
+            </h2><img src="assets/images/city_lat_max_temp.PNG" alt="A scatterplot of city latitude vs. maximum temperature in degrees Fahrenheit on August 2, 2020, showing a curvilinear relationship between the two." /> 
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <h2>
+              vs. Humidity
+            </h2>
+            <img src="assets/images/city_lat_humidity.PNG" alt="A scatterplot of city latitude vs. humidity on August 2, 2020, showing a weak relationship at best between the two." /> 
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h2>
+              vs. Cloudiness
+            </h2>
+            <img src="assets/images/city_lat_cloudiness.PNG" alt="A scatterplot of city latitude vs. humidity on August 2, 2020, showing a weak relationship at best between the two." /> 
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <h2>
+              vs. Wind Speed
+            </h2>
+            <img src="assets/images/city_lat_windspeed.PNG" alt="A scatterplot of city latitude vs. cloudiness on August 2, 2020, showing a weak at best relationship between the two." /> 
+          </div>
+        </div>
       </div>
     </div>
+  </div>
     
-    </body>
-    </html>
+</body>
+</html>
+
