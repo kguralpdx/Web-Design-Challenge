@@ -2,23 +2,78 @@
 <html lang="en-us">
 
 <head>
-  <meta charset="UTF-8">
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
   <title>Wind Speed</title>
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
   <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
   <link href='https://fonts.googleapis.com/css?family=Bellota' rel='stylesheet'>
 </head>
 
 <body>
-  <h1 class="header">Wind Speed</h1>
-    <figure>
-      <a href="../assets/images/city_lat_windspeed.PNG">
-      <img src="../assets/images/city_lat_windspeed.PNG" alt="A scatterplot of city latitude vs. maximum temperature in degrees Fahrenheit on August 2, 2020, showing a curvilinear relationship between the two.">
-      </a>
-      <figcaption class="figcaption"><em>Wind Speed Plot</em></figcaption>
-    </figure>
-    <p>Each dot in this scatter plot represents a city; its location is determined by its latitude along the x-axis and its wind speed along the y-axis. Based on the plot, there does seem to be a linear relationship 
-      between the variables but it's not positive or negative, more flat, and there are potential outliers. It does show some grouping of points toward the bottom of the plot and is somewhat linear in shape but 
-      it's still pretty scattered so no relationship.</p>
+  <div class="container" style="margin-top:90px;">
+    <nav class="navbar navbar-light navbar-expand-md fixed-top">
+      <a href="../../index.html" class="navbar-brand">Latitude</a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">   
+          <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">Plots</a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="city_lat_temp.html">Max Temperature</a>
+                <a class="dropdown-item" href="city_lat_humidity.html">Humidity</a> 
+                <a class="dropdown-item" href="city_lat_cloudiness.html">Cloudiness</a>
+                <a class="dropdown-item disabled" href="city_lat_windspeed.html">Wind Speed</a>
+            </div>
+            </li> 
+              <li class="navbar-item">
+                  <a href="../comparison.html" class="nav-link">Comparisons</a>
+              </li>
+              <li class="navbar-item">
+                  <a href="../data.html" class="nav-link">Data</a>
+              </li>
+          </ul>
+      </div>
+    </nav>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-3">
+          </div>
+          <div class="col-md-6">
+            <h1 class="header" style="margin-bottom: 40px;">Wind Speed</h1>
+              <figure>
+                <a href="../assets/images/city_lat_windspeed.PNG">
+                <img src="../assets/images/city_lat_windspeed.PNG" alt="A scatterplot of city latitude vs. maximum temperature in degrees Fahrenheit on August 2, 2020, showing a curvilinear relationship between the two.">
+                </a>
+                <figcaption class="figcaption"><em>Wind Speed Plot</em></figcaption>
+              </figure>
+              <p>Each dot in this scatter plot represents a city; its location is determined by its latitude along the x-axis and its wind speed along the y-axis. Based on the plot, there does seem to be a linear relationship 
+                between the variables but it's not positive or negative, more flat, and there are potential outliers. It does show some grouping of points toward the bottom of the plot and is somewhat linear in shape but 
+                it's still pretty scattered so no relationship.</p>
+          </div>
+          <div class="col-md-3">
+          </div>
+        </div>
+      </div>
+      </div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</div>
+
     
 </body>
 
