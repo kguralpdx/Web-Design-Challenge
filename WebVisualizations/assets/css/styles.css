@@ -8,7 +8,7 @@ body {
 h1 {
   font-size: 30px;
   font-weight: bold;
-  color: royalblue;
+  color: dodgerblue;
 }
 
 h2 {
@@ -111,16 +111,17 @@ table {
 }
 
 /* Adding media queries to try and change navbar background column depending on screen size */
-@media (max-width: 980px) {
-  .navbar-custom {
-    background-color: dodgerblue;
+@media (max-width: 767.98px) {
+  .navbar-light {
+    background-color: royalblue;
     color: white;
   }
 }
 
-@media (min-width: 981px) {
-  .navbar-custom {
-    background-color: bg-light;
+@media (min-width: 768px) {
+  .navbar-light {
+    background-color: rgb(237, 245, 255);
+    color: black;
   }
 }
 
