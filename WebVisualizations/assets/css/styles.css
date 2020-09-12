@@ -41,12 +41,19 @@ table {
 
 /* Style the brand section of the navbar */
 .navbar-brand {
-  background: rgb(14, 14, 94);
-  color: white;
+  background-color: royalblue;
   font-size: 40;
   font-weight: bold;
   padding: 10px 10px 10px 10px;
 
+}
+
+.navbar-light .navbar-brand {
+  color: white;
+}
+
+.navbar-light .navbar-item {
+  color: black;
 }
 
 /* Giving our navbar some padding and a background color 
@@ -101,4 +108,16 @@ table {
   font-size: 12px;
   color: dimgrey;
   margin-left: 20px;
+}
+
+/* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 580 pixels */
+@media (max-width: 580px) {
+  .navbar li {
+    padding: 10px;
+  }
+}
+
+.navbar-light .nav-item .nav-link,
+.navbar-light .navbar-item .nav-link {
+        color: black ;
 }
