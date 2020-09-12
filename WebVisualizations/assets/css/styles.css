@@ -46,7 +46,6 @@ table {
   font-size: 40;
   font-weight: bold;
   padding: 10px 10px 10px 10px;
-  margin-bottom: 0;
 
 }
 
@@ -74,14 +73,13 @@ table {
 }
 
 
-/* Styling the header, giving it a height, a background color, and some top padding 
+/* Styling the header, giving it a height, a background color, and some top padding */
 .header {
   height: 50px;
   padding-top: 20px;
   padding-left: 20px;
-/* background: #cdcdcd; 
+/* background: #cdcdcd; */
 }
-*/
 
 /* Centering our h1 tag inside our header, giving it a little padding*/
 .header h1 {

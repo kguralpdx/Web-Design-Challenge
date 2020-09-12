@@ -10,13 +10,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="WebVisualizations/assets/css/reset.css">
+  <!-- <link rel="stylesheet" href="WebVisualizations/assets/css/reset.css"> -->
   <link rel="stylesheet" type="text/css" href="WebVisualizations/assets/css/styles.css">
   <link href='https://fonts.googleapis.com/css?family=Bellota' rel='stylesheet'>
 
 </head>
 
 <body>
+  <div class="container" style="margin-top:90px">
 
   <nav class="navbar bg-light navbar-expand-lg fixed-top">
     <a href="#" class="navbar-brand">Latitude</a>
@@ -25,23 +26,38 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav ml-auto">
+          <!-- Dropdown -->
+          <!-----<li class="nav-item dropdown">  ------>
+          <!------- <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">  ------>
+<!--              Dropdown link
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Link 1</a>
+              <a class="dropdown-item" href="#">Link 2</a>
+              <a class="dropdown-item" href="#">Link 3</a>
+            </div>
+          </li> 
+        -->
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">Plots</a>
+           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="WebVisualizations/visualizations/city_lat_temp.html">Max Temperature</a>
+              <a class="dropdown-item" href="WebVisualizations/visualizations/city_lat_humidity.html">Humidity</a> 
+              <a class="dropdown-item" href="WebVisualizations/visualizations/city_lat_cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="WebVisualizations/visualizations/city_lat_windspeed.html">Wind Speed</a>
+          </li> 
             <li class="navbar-item">
-                <a href="#" class="nav-link">Homepage</a>
+                <a href="WebVisualizations/comparison.html" class="nav-link">Comparison</a>
             </li>
             <li class="navbar-item">
-                <a href="#" class="nav-link">Blog</a>
-            </li>
-            <li class="navbar-item">
-                <a href="#" class="nav-link">About Me</a>
-            </li>
-            <li class="navbar-item">
-                <a href="#" class="nav-link">Contact</a>
+                <a href="WebVisualizations/data.html" class="nav-link">Data</a>
             </li>
         </ul>
     </div>
 </nav>
-  <h1 class="header">City Weather Comparisons</h1>
-  <h2>Summary: Latitude vs. X</h2>
+  <h1 class="header">Summary: Latitude vs. X</h1>
   <section id="city_lat_temp">
     <img src="WebVisualizations/assets/images/city_lat_max_temp.PNG" alt="a scatter plot of city latitude vs. maximum temperature in degrees Fahrenheit with a curvilinear relationship between the two variables" class="imageleft"/>
     <p>The purpose of this project was to analyze how weather changes are you get closer to the equator. To do this analysis, a random sampling of weather condition data from at least 500 cities from around the world was taken using 
@@ -51,7 +67,13 @@
       <p>This site provides the source data extracted, the visualizations created, and the findings of the analysis.</p>
 
   </section>
-  
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </div>
 </body>
 
 </html>
