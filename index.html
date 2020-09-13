@@ -7,62 +7,98 @@
 
   <title>Summary: Latitude vs. X</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-  <!-- <link rel="stylesheet" href="WebVisualizations/assets/css/reset.css"> -->
   <link rel="stylesheet" type="text/css" href="WebVisualizations/assets/css/styles.css">
   <link href='https://fonts.googleapis.com/css?family=Bellota' rel='stylesheet'>
-
 </head>
 
 <body>
   <div class="container" style="margin-top:90px">
 
   <!-- Navbar functionality help from https://scrimba.com/p/pD5KUE/cPmpLhm -->
-  <nav class="navbar navbar-light navbar-expand-md fixed-top">
-    <a href="#" class="navbar-brand">Latitude</a>
-    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">   
+    <nav class="navbar navbar-light navbar-expand-md fixed-top">
+      <a href="#" class="navbar-brand">Latitude</a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">   
         <ul class="navbar-nav ml-auto">
 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">Plots</a>
-           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="WebVisualizations/visualizations/city_lat_temp.html">Max Temperature</a>
-              <a class="dropdown-item" href="WebVisualizations/visualizations/city_lat_humidity.html">Humidity</a> 
-              <a class="dropdown-item" href="WebVisualizations/visualizations/city_lat_cloudiness.html">Cloudiness</a>
-              <a class="dropdown-item" href="WebVisualizations/visualizations/city_lat_windspeed.html">Wind Speed</a>
-           </div>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="WebVisualizations/visualizations/city_lat_cloudiness.html">Cloudiness</a>
+            <a class="dropdown-item" href="WebVisualizations/visualizations/city_lat_humidity.html">Humidity</a> 
+            <a class="dropdown-item" href="WebVisualizations/visualizations/city_lat_temp.html">Max Temperature</a>
+            <a class="dropdown-item" href="WebVisualizations/visualizations/city_lat_windspeed.html">Wind Speed</a>
+          </div>
           </li> 
-            <li class="navbar-item">
-                <a href="WebVisualizations/comparison.html" class="nav-link">Comparisons</a>
-            </li>
-            <li class="navbar-item">
-                <a href="WebVisualizations/data.html" class="nav-link">Data</a>
-            </li>
+          <li class="navbar-item">
+              <a href="WebVisualizations/comparison.html" class="nav-link">Comparisons</a>
+          </li>
+          <li class="navbar-item">
+            <a href="WebVisualizations/data.html" class="nav-link">Data</a>
+          </li>
         </ul>
+      </div>
+    </nav>
+
+    <div class="row">
+      <div class="leftcolumn">
+        <h1 class="header">Summary: Latitude vs. X</h1>
+        <section id="city_lat_temp">
+          <img src="WebVisualizations/assets/images/city_lat_max_temp.PNG" alt="a scatter plot of city latitude vs. maximum temperature in degrees Fahrenheit with a curvilinear relationship between the two variables" class="imageleft"/>
+          <p>The purpose of this project was to analyze how weather changes are you get closer to the equator. To do this analysis, a random sampling of weather condition data from at least 500 cities from around the world was taken using 
+            the <em>OpenWeatherMap API</em>. From that dataset, four weather conditions--maximum temperature, humidity, cloudiness, and wind speed--were then compared with the cities' latitudes through <em>Matplotlib</em> scatter plots to 
+            determine if they can predict what the weather will be like.
+          </p>
+          <br>
+          <p>This site provides the source data extracted, the visualizations created, and the findings of the analysis.</p>
+        </section>
+      </div>
+      <div class="rightcolumn">
+        <h2>Visualizations</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3-md-6">
+              <a target="_blank" href="WebVisualizations/visualizations/city_lat_cloudiness.html">
+                <img class="thumbnail-img" alt="A scatterplot of city latitude vs. cloudiness on August 2, 2020, showing a weak at best relationship between the two." src="WebVisualizations/assets/images/city_lat_cloudiness.PNG" />
+              </a>
+            </div>
+            <div class="col-sm-3-md-6">
+              <a target="_blank" href="WebVisualizations/visualizations/city_lat_humidity.html">
+                <img class="thumbnail-img" alt="A scatterplot of city latitude vs. humidity on August 2, 2020, showing a weak relationship at best between the two" src="WebVisualizations/assets/images/city_lat_humidity.PNG" />
+              </a>
+            </div>
+            <div class="col-sm-3-md-6">
+              <a target="_blank" href="WebVisualizations/visualizations/city_lat_temp.html">
+                <img class="thumbnail-img" alt="A scatterplot of city latitude vs. maximum temperature in degrees Fahrenheit on August 2, 2020, showing a curvilinear relationship between the two." src="WebVisualizations/assets/images/city_lat_max_temp.PNG" />
+              </a>
+            </div>
+            <div class="col-sm-3-md-6">
+              <a target="_blank" href="WebVisualizations/visualizations/city_lat_windspeed.html">
+                <img class="thumbnail-img" alt="A scatterplot of city latitude vs. wind speed in mph on August 2, 2020, showing some grouping of points toward the bottom of the plot and is somewhat linear in shape but 
+                it's still pretty scattered so no relationship." src="WebVisualizations/assets/images/city_lat_windspeed.PNG" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</nav>
-  <h1 class="header">Summary: Latitude vs. X</h1>
-  <section id="city_lat_temp">
-    <img src="WebVisualizations/assets/images/city_lat_max_temp.PNG" alt="a scatter plot of city latitude vs. maximum temperature in degrees Fahrenheit with a curvilinear relationship between the two variables" class="imageleft"/>
-    <p>The purpose of this project was to analyze how weather changes are you get closer to the equator. To do this analysis, a random sampling of weather condition data from at least 500 cities from around the world was taken using 
-      the <em>OpenWeatherMap API</em>. From that dataset, four weather conditions--maximum temperature, humidity, cloudiness, and wind speed--were then compared with the cities' latitudes through <em>Matplotlib</em> scatter plots to 
-      determine if they can predict what the weather will be like.</p>
-      <br>
-      <p>This site provides the source data extracted, the visualizations created, and the findings of the analysis.</p>
-
-  </section>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
   </div>
+
+
+
+  <div class="footer">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </div>
+  
 </body>
 
 </html>
