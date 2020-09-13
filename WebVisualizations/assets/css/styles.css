@@ -1,6 +1,5 @@
 /* Giving the body the specified background color, adding font sizes for the h1 and h3 elements we'll be using */
 body {
-/*  background: #f1f1f1; */
   font-family: 'Bellota';
   font-size: 18px;
 }
@@ -62,7 +61,6 @@ table {
   height: 50px;
   padding-top: 20px;
   padding-left: 20px;
-/* background: #cdcdcd; */
 }
 
 /* Centering our h1 tag inside our header, giving it a little padding*/
@@ -72,13 +70,6 @@ table {
   color: #5191fd;
   text-align: center;
 }
-
-/* Giving the .post element margin on 3 sides */
-/*.post {
-  margin-top: 50px;
-  margin-right: 100px;
-  margin-left: 100px;
-} */
 
 /* Giving the .figcaption element font size and color*/
 .figcaption {
@@ -119,7 +110,6 @@ table {
 .rightcolumn {
   float: left;
   width: 35%;
-  /*background-color: #f1f1f1;*/
   padding-left: 25px;
   padding-right: 25px;
 }
@@ -147,7 +137,7 @@ table {
   }
 }
 
-
+/* Format the thumbnail impages in the sidebar */
 .thumbnail-img {
   border-radius: 4px;  /* Rounded border */
   padding: 5px; /* Some padding */
