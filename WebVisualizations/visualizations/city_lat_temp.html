@@ -29,10 +29,10 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">Plots</a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item disabled" href="city_lat_temp.html">Max Temperature</a>
-                <a class="dropdown-item" href="city_lat_humidity.html">Humidity</a> 
-                <a class="dropdown-item" href="city_lat_cloudiness.html">Cloudiness</a>
-                <a class="dropdown-item" href="city_lat_windspeed.html">Wind Speed</a>
+              <a class="dropdown-item" href="city_lat_cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="city_lat_humidity.html">Humidity</a> 
+              <a class="dropdown-item disabled" href="city_lat_temp.html">Max Temperature</a>
+              <a class="dropdown-item" href="city_lat_windspeed.html">Wind Speed</a>
             </div>
             </li> 
               <li class="navbar-item">
@@ -45,36 +45,58 @@
       </div>
     </nav>
     <div class="row">
-      <div class="col-md-12">
-        <div class="row">
-          <div class="col-md-3">
-          </div>
-          <div class="col-md-6">
-            <h1 class="header" style="margin-bottom: 40px;">Max Temperature</h1>
-              <figure>
-                <a href="../assets/images/city_lat_max_temp.PNG">
-                <img src="../assets/images/city_lat_max_temp.PNG" alt="A scatterplot of city latitude vs. maximum temperature in degrees Fahrenheit on August 2, 2020, showing a curvilinear relationship between the two.">
-                </a>
-                <figcaption class="figcaption"><em>Max Temperature Plot</em></figcaption>
-              </figure>
-              <p>Each dot in this scatter plot represents a city; its location is determined by its latitude along the x-axis and its maximum temperature in degrees Fahrenheit along the y-axis. Based on the shape of the plot, 
-                these two variables have a moderate to strong curvilinear relationship with a few potential outliers. The closer a city was to the equator, it was likely that its temperature would be warmer than a city farther 
-                from the equator. Of all the data points compared, this was the only pair of variables that showed strong potential for further analysis.</p>
-
-          </div>
-          <div class="col-md-3">
+      <div class="leftcolumn">
+        <h1 class="header" style="margin-bottom: 40px;">Max Temperature</h1>
+        <figure>
+          <a target="_blank" href="../assets/images/city_lat_max_temp.PNG">
+            <img src="../assets/images/city_lat_max_temp.PNG" alt="A scatterplot of city latitude vs. maximum temperature in degrees Fahrenheit on August 2, 2020, showing a curvilinear relationship between the two.">
+          </a>
+          <figcaption class="figcaption"><em>Max Temperature Plot</em></figcaption>
+        </figure>
+        <p>Each dot in this scatter plot represents a city; its location is determined by its latitude along the x-axis and its maximum temperature in degrees Fahrenheit along the y-axis. Based on the shape of the plot, 
+          these two variables have a moderate to strong curvilinear relationship with a few potential outliers. The closer a city was to the equator, it was likely that its temperature would be warmer than a city farther 
+          from the equator. Of all the data points compared, this was the only pair of variables that showed strong potential for further analysis.
+        </p>
+      </div>
+      <div class="rightcolumn">
+        <h2>Visualizations</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3-md-6">
+              <a target="_blank" href="city_lat_cloudiness.html">
+                <img class="thumbnail-img" alt="A scatterplot of city latitude vs. cloudiness on August 2, 2020, showing a weak at best relationship between the two." src="../assets/images/city_lat_cloudiness.PNG" />
+              </a>
+            </div>
+            <div class="col-sm-3-md-6">
+              <a target="_blank" href="city_lat_humidity.html">
+                <img class="thumbnail-img" alt="A scatterplot of city latitude vs. humidity on August 2, 2020, showing a weak relationship at best between the two" src="../assets/images/city_lat_humidity.PNG" />
+              </a>
+            </div>
+            <div class="col-sm-3-md-6">
+              <a target="_blank" href="city_lat_temp.html">
+                <img class="thumbnail-img" alt="A scatterplot of city latitude vs. maximum temperature in degrees Fahrenheit on August 2, 2020, showing a curvilinear relationship between the two." src="../assets/images/city_lat_max_temp.PNG" />
+              </a>
+            </div>
+            <div class="col-sm-3-md-6">
+              <a target="_blank" href="city_lat_windspeed.html">
+                <img class="thumbnail-img" alt="A scatterplot of city latitude vs. wind speed in mph on August 2, 2020, showing some grouping of points toward the bottom of the plot and is somewhat linear in shape but 
+                it's still pretty scattered so no relationship." src="../assets/images/city_lat_windspeed.PNG" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      </div>
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </div>
   </div>
-    
-</body>
 
-</html>
+      <div class="footer">
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      </div>
+      
+  </body>
+  
+  </html>
